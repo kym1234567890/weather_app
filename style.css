@@ -1,0 +1,32 @@
+body{
+    margin:4px;
+    background-image: url(weather_app/weather\ background.jpg);
+    padding: 50px;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px 5px rgb(221, 61, 186);
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+
+    border-style:solid;
+    border-color:rgb(228, 60, 177);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+.myButton:hover{
+background-color: rgb(223, 178, 224);
+}
