@@ -1,57 +1,30 @@
-console.log("hello world!")
+let myName = prompt("What is your name?");
 
-//prompt
-//alert
+let myButton = document.querySelector("#myButton");
 
-//alert("Hello World!")
+myButton.addEventListener("click", myClick);
 
-//button query selector
-document.querySelector("#myButton")
-//find element by id
-//find elements by class
+function myClick() {
+    if ( myName === null || myName === "") {
+        myName = "Visitor";
+    }
 
-//add event listener
-myButton.addEventListener("CLICK ME",myClick);
+    alert(`Hello ${myName}!`);
 
-function myClick(){
-//console.log("Clicking");
-//console.log(myNmame);
-//alert("Hello "+myName +"!")
+    const weather = prompt(`How is the weather today`);
 
-//What is Strings
-//"aisdifijifjirifiirf"
-//"sdfuhishfisifisifhisf"
-//37937643846721934
-let name=prompt("What is your name?")
+    let myImage = document.querySelector(".WeatherImage");
 
-alert{'Hello $(myNmame)!'}
-const weather= prompt('How is the weather today');
+    if (weather === null) {
+        return;
+    }
 
-let myImage=document.querySelector("weatherImage");
-//Run condition to check what I wrote in the "weather" prompt
-
-//if(weather)==="sunny"||weather==="Sunny"||weather==="SUNNY")
-//.toLowerCause()
-
-if(weather==="sunny"||weather==="Sunny"||weather==="SUNNY") {
-    myImage.src="";
-}else{
-    myImage.src="";
-}
-
-}
-
-//changed -> cannot use const
-//let sum =100;
-//sum=sum + 10
-//console.log("sum:",sum)
-
-//Conditions
-if(weight>80) {
-    loseweight()
-}else if(weight <50) {
-    eatMore()
-}else{
-    nothing()
+    if ( weather.toLowerCase() === "sunny" ) {
+        myImage.src = "sunny.gif";
+    } else if ( weather.toLowerCase() === "rainy" ) {
+        myImage.src = "rainy.gif";
+    } else {
+        alert(`Please input a correct weather name`);
+    }
 }
 
